@@ -1,0 +1,166 @@
+/* Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {}
+
+.dark-mode:root {}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+.divDivision {
+    height: 82vh;
+    width: 98.7vw;
+}
+
+.titulo {
+    text-align: center;
+}
+
+/* NavBar */
+
+#logo {
+    font-size: 25px;
+    text-decoration: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: var(--corFontes);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 12vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: red;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 19px;
+}
+
+
+/* Home */
+
+#Home {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgMe {
+    width: 500px;
+}
+
+#infoMe h3 {
+    color: antiquewhite;
+    font: normal 37px Arial;
+}
+
+#infoMe h1 {
+    color: aliceblue;
+    font: normal 42px Arial;
+}
+
+#infoMe button , #infoMe a {
+    color: purple;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Sobre mim */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic {
+    width: 300px;
+    height: 300px;
+}
+
+#info {
+    width: 700px;
+    height: 180px;
+}
+
+/* Projetos */
+
+#cardsPro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.cardProjects {
+    width: 250px;
+    height: 110px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+/* Habilidades */
+
+#cardsAbitly {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.cardLanguages {
+    width: 250px;
+    height: 110px;
+    border-radius: 5px;
+    background-color: #495970;
+}
+
+.cardLanguages img {
+    margin: auto;
+    display: block;
+    transform: translate(0px , 23px);
+}
+
+.cardLanguages:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.661);
+    transition: transform .3s, border 1s;
+}
+
+
+/* Footer */
+
+
+.footerDivision {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
