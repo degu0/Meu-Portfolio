@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="mode">
 
 <head>
     <meta charset="UTF-8">
@@ -12,19 +12,18 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="menu">
             <a href="" id="logo">
                 Me
             </a>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre mim</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Conhecimento</a></li>
-                <li><a href="">Dark Mode</a></li>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#cardsPro">Projetos</a></li>
+                <li><a href="#cardsAbitly">Conhecimento</a></li>
+                <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png" alt="modo claro" class="icon">
+                </label></li>
             </ul>
         </nav>
-        <hr>
     </header>
     <section>
         <div class="divDivision" id="Home">
@@ -33,10 +32,10 @@
             </div>
             <div id="infoMe">
                 <h3>Ola, sou</h3>
-                <h1>Deyvid Gustavo</h1>
+                <h1 class="tit">Deyvid Gustavo</h1>
                 <h3>E sou um Desenvolvedor</h3>
-                <button><a href=""> LinkedIn <img src="image/linkedin.png" alt="LinkedIn"></a></button>
-                <button><a href=""> <span>Github</span> <img src="image/github.png" alt="GitHub"></a></button>
+                <button><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank" class="link"> <label>LinkedIn </label> <img src="image/linkedin-light-mode.png" alt="LinkedIn"></a></button>
+                <button><a href="https://github.com/degu0" target="_blank" class="link"> <label>Github </label> <img src="image/github-light-mode.png" alt="GitHub"></a></button>
             </div>
         </div>
         <h1 class="titulo">Sobre mim</h1>
@@ -52,29 +51,29 @@
         </div>
         <h1 class="titulo">Projetos</h1>
         <div class="divDivision" id="cardsPro">
-            <a href=""><div class="cardProjects">Schron</div></a>
-            <a href=""><div class="cardProjects">Library</div></a>
-            <a href=""><div class="cardProjects">Calculadora</div></a>
-            <a href=""><div class="cardProjects">Em Breve</div></a>
+            <a href="https://github.com/degu0/Schron" target="_blank"><div class="cardProjects" data-anime = "left"><img src="image/Schron.png" alt="Schron"></div></a>
+            <a href="https://github.com/degu0/Library_ETE" target="_blank"><div class="cardProjects" data-anime = "right"><img src="image/Library.png" alt="Library"></div></a>
+            <a href="https://github.com/degu0/my_calculator" target="_blank"><div class="cardProjects" data-anime = "left"><img src="image/Calculator.png" alt="Calculator"></div></a>
+            <a href="" target="_blank"><div class="cardProjects" data-anime = "right"><img src="image/EmBreve-light-mode.png" alt="Em breve mais um projeto"></div></a>
         </div>
         <h1 class="titulo">Habilidades</h1>
         <div class="divDivision" id="cardsAbitly">
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "top">
                 <img src="image/html-5.png" alt="html-5">
             </div>
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "top">
                 <img src="image/css-3.png" alt="css-3">
             </div>
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "top">
                 <img src="image/js.png" alt="JavaScript">
             </div>
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "bottom">
                 <img src="image/python.png" alt="Python">
             </div>
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "bottom">
                 <img src="image/php.png" alt="Php">
             </div>
-            <div class="cardLanguages">
+            <div class="cardLanguages" data-anime = "bottom">
                 <img src="image/mysql.png" alt="MySql">
             </div>
         </div>
@@ -87,8 +86,8 @@
         </div>
         <div id="network">
             <p>Mais redes de contanto:</p>
-            <a href=""><img src="image/linkedin.png" alt="LinkedIn"></a>
-            <a href=""><img src="image/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"><img src="image/linkedin-light-mode.png" alt="LinkedIn"></a>
+            <a href="https://github.com/degu0" target="_blank"><img src="image/github-light-mode.png" alt="GitHub"></a>
         </div>
     </footer>
     <script src="script/script.js"></script>

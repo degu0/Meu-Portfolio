@@ -5,23 +5,60 @@
     padding: 0;
 }
 
-:root {}
+:root {
+    --bg: #f3f3f3;
+}
 
-.dark-mode:root {}
+.dark-mode:root {
+    --bg: #212529;
+    --font: #899095;
+}
 
 html,
 body {
     min-height: 100vh;
+    background-color: var(--bg);
 }
 
 .divDivision {
-    height: 82vh;
+    height: 98vh;
     width: 98.7vw;
 }
 
 .titulo {
     text-align: center;
 }
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+label {
+    cursor: pointer;
+}
+
 
 /* NavBar */
 
@@ -52,18 +89,29 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: red;
+    color: black;
     text-decoration: none;
     padding: 0 20px;
     line-height: 60px;
     font-size: 19px;
 }
 
+#chk {
+    visibility: hidden;
+}
+
+#chk-mode {
+    display: block;
+    padding: 0 20px;
+}
+
+.open {
+    display: block;
+}
 
 /* Home */
 
 #Home {
-    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,22 +122,49 @@ nav ul li a {
 }
 
 #infoMe h3 {
-    color: antiquewhite;
+    color: rgb(3, 3, 79);
     font: normal 37px Arial;
 }
 
+#infoMe h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 #infoMe h1 {
-    color: aliceblue;
+    color: #2f2fee;
     font: normal 42px Arial;
 }
 
-#infoMe button , #infoMe a {
-    color: purple;
+#infoMe button,
+#infoMe a {
+    background-color: gray;
+    color: white;
     text-decoration: none;
     margin: 10px;
-    padding: 10px;
+    padding: 0px 10px 11px;
     border-radius: 5px;
     border: none;
+
+}
+
+.link img {
+    margin: auto;
+    transform: translate(0px, 5px);
 }
 
 /* Sobre mim */
@@ -119,11 +194,9 @@ nav ul li a {
     justify-items: center;
 }
 
-.cardProjects {
-    width: 250px;
-    height: 110px;
-    border-radius: 5px;
-    background-color: gray;
+.cardProjects:hover {
+    transform: translate(-3px, -3px);
+    transition: transform .3s, border 1s;
 }
 
 /* Habilidades */
@@ -145,10 +218,10 @@ nav ul li a {
 .cardLanguages img {
     margin: auto;
     display: block;
-    transform: translate(0px , 23px);
+    transform: translate(0px, 23px);
 }
 
-.cardLanguages:hover{
+.cardLanguages:hover {
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.661);
     transition: transform .3s, border 1s;
