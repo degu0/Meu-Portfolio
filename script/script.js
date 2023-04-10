@@ -119,8 +119,14 @@ checkbox.addEventListener('change', () => {
     if(html.classList.contains('open')) {
         html.classList.remove('open');
         document.querySelector('.icon').src = 'image/moon.png'
+        document.querySelector('#EmBreve').src = 'image/EmBreve-light-mode.png'
+        document.querySelector('.IconLinkedIn').src = 'image/linkedin-light-mode.png'
+        document.querySelector('.IconGitHub').src = 'image/github-light-mode.png'
     } else {
         html.classList.add('open');
         document.querySelector('.icon').src = 'image/sun.png'
+        document.querySelector('#EmBreve').src = 'image/EmBreve-dark-mode.png'
+        document.querySelector('.IconLinkedIn').src = 'image/linkedin-dark-mode.png'
+        document.querySelector('.IconGitHub').src = 'image/github-dark-mode.png'
     }
 })

@@ -1,4 +1,5 @@
 /* Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Courier+Prime&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -7,11 +8,19 @@
 
 :root {
     --bg: #f3f3f3;
+    --bg-invertido: #212529;
+    --font: #090909;
+    --fontHome: #9563c3;
+    --fontH1Home: #41007e;
+    --cardSkills: #526875;
 }
 
 .dark-mode:root {
     --bg: #212529;
+    --bg-invertido:#f3f3f3;
     --font: #899095;
+    --fontH1Home: #9c3cf1;
+    --cardSkills: #959FA6;
 }
 
 html,
@@ -26,7 +35,9 @@ body {
 }
 
 .titulo {
+    color: var(--font);
     text-align: center;
+    font-family: 'Anuphan', sans-serif;
 }
 
 [data-anime] {
@@ -67,7 +78,8 @@ label {
     text-decoration: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
-    color: var(--corFontes);
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -89,11 +101,12 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: black;
+    color: var(--font);
     text-decoration: none;
     padding: 0 20px;
     line-height: 60px;
     font-size: 19px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #chk {
@@ -122,9 +135,10 @@ nav ul li a {
 }
 
 #infoMe h3 {
-    color: rgb(3, 3, 79);
-    font: normal 37px Arial;
+    color: var(--fontHome);
+    font: normal 37px 'Courier Prime', monospace;
 }
+
 
 #infoMe h1::after {
     content: '|';
@@ -146,32 +160,38 @@ nav ul li a {
 }
 
 #infoMe h1 {
-    color: #2f2fee;
-    font: normal 42px Arial;
+    color: var(--fontH1Home);
+    font: normal 42px 'Courier Prime', monospace;;
 }
 
-#infoMe button,
-#infoMe a {
-    background-color: gray;
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    padding: 0px 10px 11px;
-    border-radius: 5px;
-    border: none;
-
+#infoMe button {
+    background-color: var(--bg);
+    border-radius: 100%;
+    border: 1px solid #540b98;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+    margin: 10px 20px 0px 0px;
 }
 
-.link img {
-    margin: auto;
-    transform: translate(0px, 5px);
+#infoMe button:hover {
+    transform: translate(-2px, -2px);
+    transition: transform .3s, border 1s;
 }
+
+.link img { 
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 
 /* Sobre mim */
 
 #about {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -183,6 +203,24 @@ nav ul li a {
 #info {
     width: 700px;
     height: 180px;
+    color: var(--font);
+}
+
+#titleAbout {
+    text-align: start;
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: 'Anuphan', sans-serif;
+}
+
+#subTitleAbout {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: 'Anuphan', sans-serif;
+}
+
+#info p {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Projetos */
@@ -209,16 +247,27 @@ nav ul li a {
 }
 
 .cardLanguages {
-    width: 250px;
-    height: 110px;
+    width: 200px;
+    height: 188px;
     border-radius: 5px;
-    background-color: #495970;
+    background-color: var(--cardSkills);
+}
+
+.cardLanguages h1 {
+    margin: 2px 0px 10px 2px;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.cardLanguages p { 
+    text-indent: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 .cardLanguages img {
     margin: auto;
     display: block;
-    transform: translate(0px, 23px);
+    transform: translate(0px, 60px);
 }
 
 .cardLanguages:hover {
@@ -227,13 +276,29 @@ nav ul li a {
     transition: transform .3s, border 1s;
 }
 
+.cardLanguages .content {
+    transition: .5s ease-in-out;
+    margin: -64px 0px 0px 0px;
+    opacity: 0;
+    background: linear-gradient(0deg, var(--fontH1Home), transparent);
+    width: 200px;
+    height: 188px;
+    border-radius: 5px;
+}
+.cardLanguages:hover .content {
+    transform: translateX(0);
+    opacity: 1;
+    color: var(--bg);
+}
 
 /* Footer */
 
 
 .footerDivision {
+    color: var(--font);
     height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
