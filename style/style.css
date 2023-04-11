@@ -12,7 +12,6 @@
     --font: #090909;
     --fontHome: #9563c3;
     --fontH1Home: #41007e;
-    --cardSkills: #526875;
 }
 
 .dark-mode:root {
@@ -20,7 +19,6 @@
     --bg-invertido:#f3f3f3;
     --font: #899095;
     --fontH1Home: #9c3cf1;
-    --cardSkills: #959FA6;
 }
 
 html,
@@ -68,6 +66,10 @@ body {
 
 label {
     cursor: pointer;
+}
+
+hr {
+    color: var(--bg-invertido);
 }
 
 
@@ -183,7 +185,7 @@ nav ul li a {
     text-align: center;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 
@@ -208,15 +210,13 @@ nav ul li a {
 
 #titleAbout {
     text-align: start;
-    font-size: 35px;
     margin-bottom: 10px;
-    font-family: 'Anuphan', sans-serif;
+    font: normal 35px 'Anuphan', sans-serif;
 }
 
 #subTitleAbout {
-    font-size: 25px;
     margin-bottom: 15px;
-    font-family: 'Anuphan', sans-serif;
+    font: normal 25px 'Anuphan', sans-serif;
 }
 
 #info p {
@@ -249,19 +249,20 @@ nav ul li a {
 .cardLanguages {
     width: 200px;
     height: 188px;
-    border-radius: 5px;
-    background-color: var(--cardSkills);
+    border-radius: 40px;
+    background-color: var(--bg-invertido);
 }
 
 .cardLanguages h1 {
-    margin: 2px 0px 10px 2px;
+    margin: 2px 0px 10px 0px;
     font-family: 'Anuphan', sans-serif;
+    text-align: center;
 }
 
 .cardLanguages p { 
     text-indent: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font: normal 15px 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .cardLanguages img {
@@ -276,14 +277,18 @@ nav ul li a {
     transition: transform .3s, border 1s;
 }
 
+.cardLanguages:hover img { 
+    opacity: 0.5;
+}
+
 .cardLanguages .content {
     transition: .5s ease-in-out;
-    margin: -64px 0px 0px 0px;
+    margin-top: -64px;
     opacity: 0;
     background: linear-gradient(0deg, var(--fontH1Home), transparent);
     width: 200px;
     height: 188px;
-    border-radius: 5px;
+    border-radius: 40px;
 }
 .cardLanguages:hover .content {
     transform: translateX(0);
