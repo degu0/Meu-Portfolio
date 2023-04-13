@@ -130,3 +130,18 @@ checkbox.addEventListener('change', () => {
         document.querySelector('.IconGitHub').src = 'image/github-dark-mode.png'
     }
 })
+
+
+//Menu Mobile
+
+function menuShow() {
+    let menuMobile = document.querySelector('.nav-list');
+    if (menuMobile.classList.contains('openMenu')) {
+        menuMobile.classList.remove('openMenu');
+        document.querySelector('.iconMenu').src = 'image/hamburger.png';
+    } else {
+        menuMobile.classList.add('openMenu');
+        document.querySelector('.iconMenu').src = 'image/sair.png';
+
+    }
+}

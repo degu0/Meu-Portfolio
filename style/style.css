@@ -35,7 +35,7 @@ body {
 .titulo {
     color: var(--font);
     text-align: center;
-    font-family: 'Anuphan', sans-serif;
+    font: normal 30px 'Anuphan', sans-serif;
 }
 
 [data-anime] {
@@ -74,6 +74,10 @@ hr {
 
 
 /* NavBar */
+
+.mobile_menu {
+    display: none;
+}
 
 #logo {
     font-size: 25px;
@@ -123,6 +127,39 @@ nav ul li a {
 .open {
     display: block;
 }
+
+@media screen and (max-width: 700px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .mobile_menu button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .openMenu {
+        display: block;
+    }
+}
+
 
 /* Home */
 
@@ -188,6 +225,10 @@ nav ul li a {
     margin-right: auto;
 }
 
+@media screen and (max-width: 805px) {
+    
+}
+
 
 /* Sobre mim */
 
@@ -235,6 +276,16 @@ nav ul li a {
 .cardProjects:hover {
     transform: translate(-3px, -3px);
     transition: transform .3s, border 1s;
+}
+
+
+@media screen and (max-width: 950px) {
+    /* Projetos e Sobre mim */
+
+
+
+
+
 }
 
 /* Habilidades */
@@ -294,6 +345,14 @@ nav ul li a {
     transform: translateX(0);
     opacity: 1;
     color: var(--bg);
+}
+
+@media screen and (max-width: 670px) {
+    
+    #cardsAbitly {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /* Footer */
