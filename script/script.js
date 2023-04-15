@@ -8,7 +8,9 @@ function typeWriter(element) {
 }
 
 const titulo = document.querySelector('.tit');
+const subTitulo = document.querySelector('.subtit');
 typeWriter(titulo);
+typeWriter(subTitulo);
 
 // Animação do scroll
 const debounce = function (func, wait, immediate) {
@@ -45,7 +47,6 @@ animeScroll();
 if (targetAnimation.length) {
     window.addEventListener('scroll', debounce(function () {
         animeScroll();
-        console.log('xxx');
     }, 200))
 }
 
@@ -134,14 +135,47 @@ checkbox.addEventListener('change', () => {
 
 //Menu Mobile
 
-function menuShow() {
-    let menuMobile = document.querySelector('.nav-list');
-    if (menuMobile.classList.contains('openMenu')) {
-        menuMobile.classList.remove('openMenu');
-        document.querySelector('.iconMenu').src = 'image/hamburger.png';
-    } else {
-        menuMobile.classList.add('openMenu');
-        document.querySelector('.iconMenu').src = 'image/sair.png';
-
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
     }
-}
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+  mobileNavbar.init();

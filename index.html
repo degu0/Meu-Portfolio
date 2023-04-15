@@ -17,17 +17,20 @@
             <a href="" id="logo">
                 Portfolio
             </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             <ul class="nav-list">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#cardsPro">Projetos</a></li>
                 <li><a href="#cardsAbitly">Conhecimento</a></li>
-                <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png" alt="modo claro" class="icon">
-                </label></li>
+                <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png"
+                            alt="modo claro" class="icon">
+                    </label></li>
             </ul>
-            <div class="mobile_menu">
-                <button onclick="menuShow()" id="buttonMenu"><img class="iconMenu" src="image/hamburger.png" alt="Menu mobile" style="max-width: 30px; max-height: 30px;"></button>
-            </div>
         </nav>
     </header>
     <section>
@@ -39,8 +42,11 @@
                 <h3>Olá, sou</h3>
                 <h1 class="tit">Deyvid Gustavo</h1>
                 <h3>E sou um Desenvolvedor</h3>
-                <button><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank" class="link"><img src="image/linkedin-light-mode.png" alt="LinkedIn" class="IconLinkedIn"></a></button>
-                <button><a href="https://github.com/degu0" target="_blank" class="link"><img src="image/github-light-mode.png" alt="GitHub" class="IconGitHub"></a></button>
+                <button class="iconLink"><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"
+                        class="link"><img src="image/linkedin-light-mode.png" alt="LinkedIn"
+                            class="IconLinkedIn"></a></button>
+                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><img
+                            src="image/github-light-mode.png" alt="GitHub" class="IconGitHub"></a></button>
             </div>
         </div>
         <hr>
@@ -50,7 +56,7 @@
             </div>
             <div id="info">
                 <h1 id="titleAbout">Sobre mim</h1>
-                <h3 id="subTitleAbout">Desenvolvedor</h3>
+                <h3 class="subtit" id="subTitleAbout">Desenvolvedor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit voluptate esse est, odit at
                     reprehenderit mollitia recusandae, tenetur cupiditate assumenda eveniet soluta voluptatum, veritatis
                     optio! Veritatis ipsum tempora hic.</p>
@@ -59,15 +65,67 @@
         <hr>
         <h1 class="titulo">Projetos</h1>
         <div class="divDivision" id="cardsPro">
-            <a href="https://github.com/degu0/Schron" target="_blank"><div class="cardProjects" data-anime = "left"><img src="image/Schron.png" alt="Schron"></div></a>
-            <a href="https://github.com/degu0/Library_ETE" target="_blank"><div class="cardProjects" data-anime = "right"><img src="image/Library.png" alt="Library"></div></a>
-            <a href="https://github.com/degu0/my_calculator" target="_blank"><div class="cardProjects" data-anime = "left"><img src="image/Calculator.png" alt="Calculator"></div></a>
-            <a href="" target="_blank"><div class="cardProjects" data-anime = "right"><img src="image/EmBreve-light-mode.png" alt="Em breve mais um projeto" id="EmBreve"></div></a>
+            <div class="cardProjects" data-anime="left">
+                <img src="image/Schron.png" alt="Schron">
+                <div>
+                    <h2>Schron</h2><br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sequi provident sapiente earum
+                        quisquam
+                        porro repudiandae quam eligendi est, pariatur, cumque quia illo nostrum! Nobis distinctio
+                        expedita
+                        necessitatibus iste dolorum?</p>
+                    <div class="linksProjects">
+                        <a href="#" id="idLinkGutHub">
+                            <img src="image/github-dark-mode.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cardProjects" data-anime="right">
+                <img src="image/Library.png" alt="Library" id="library">
+                <div>
+                    <h2>Library</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum atque id molestias vero
+                        sequi optio explicabo fuga rem. Corporis fugiat sint porro accusantium enim ducimus maiores sunt
+                        itaque eius?</p>
+                    <div class="linksProjects">
+                        <a href="#" id="idLinkGutHub">
+                            <img src="image/github-dark-mode.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cardProjects" data-anime="left">
+                <img src="image/Calculator.png" alt="Calculator">
+                <div>
+                    <h2>Calculator</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum atque id molestias vero
+                        sequi optio explicabo fuga rem. Corporis fugiat sint porro accusantium enim ducimus maiores sunt
+                        itaque eius?</p>
+                    <div class="linksProjects">
+                        <a href="#" id="idLinkGutHub">
+                            <img src="image/github-dark-mode.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="image/linkedin-dark-mode.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cardProjects" data-anime="right">
+                <img src="image/EmBreve-light-mode.png" alt="Em breve mais um projeto" id="EmBreve">
+                <div>
+                    <h2>Em Breve</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptatum atque id molestias vero
+                        sequi optio explicabo fuga rem. Corporis fugiat sint porro accusantium enim ducimus maiores sunt
+                        itaque eius?</p>
+                </div>
+            </div>
         </div>
         <hr>
         <h1 class="titulo">Habilidades</h1>
         <div class="divDivision" id="cardsAbitly">
-            <div class="cardLanguages" data-anime = "top">
+            <div class="cardLanguages" data-anime="top">
                 <img src="image/html-5.png" alt="html-5">
                 <div class="content">
                     <h1>HTML</h1>
@@ -75,7 +133,7 @@
                     <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
                 </div>
             </div>
-            <div class="cardLanguages" data-anime = "top">
+            <div class="cardLanguages" data-anime="top">
                 <img src="image/css-3.png" alt="css-3">
                 <div class="content">
                     <h1>CSS</h1>
@@ -83,7 +141,7 @@
                     <p>Desenvolvo e estudo com css à 2 anos e tenho 3 projetos postados</p>
                 </div>
             </div>
-            <div class="cardLanguages" data-anime = "top">
+            <div class="cardLanguages" data-anime="top">
                 <img src="image/js.png" alt="JavaScript">
                 <div class="content">
                     <h1>JavaScript</h1>
@@ -91,7 +149,7 @@
                     <p>Programo e estudo à 2 anos com JavaScript e tenho 2 projetos postados</p>
                 </div>
             </div>
-            <div class="cardLanguages" data-anime = "bottom">
+            <div class="cardLanguages" data-anime="bottom">
                 <img src="image/python.png" alt="Python">
                 <div class="content">
                     <h1>Python</h1>
@@ -99,7 +157,7 @@
                     <p>Programo e estudo à 2 anos com Python e tenho 1 projeto postado.</p>
                 </div>
             </div>
-            <div class="cardLanguages" data-anime = "bottom">
+            <div class="cardLanguages" data-anime="bottom">
                 <img src="image/php.png" alt="Php">
                 <div class="content">
                     <h1>PHP</h1>
@@ -107,7 +165,7 @@
                     <p>Programo e estudo à 1 ano com PHP e tenho 2 projetos postados</p>
                 </div>
             </div>
-            <div class="cardLanguages" data-anime = "bottom">
+            <div class="cardLanguages" data-anime="bottom">
                 <img src="image/mysql.png" alt="MySql">
                 <div class="content">
                     <h1>MySql</h1>
@@ -125,8 +183,10 @@
         </div>
         <div id="network">
             <p>Mais redes de contanto:</p>
-            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"><img src="image/linkedin-light-mode.png" alt="LinkedIn" class="IconLinkedIn"></a>
-            <a href="https://github.com/degu0" target="_blank"><img src="image/github-light-mode.png" alt="GitHub" class="IconGitHub"></a>
+            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"><img
+                    src="image/linkedin-light-mode.png" alt="LinkedIn" class="IconLinkedIn"></a>
+            <a href="https://github.com/degu0" target="_blank"><img src="image/github-light-mode.png" alt="GitHub"
+                    class="IconGitHub"></a>
         </div>
     </footer>
     <script src="script/script.js"></script>
