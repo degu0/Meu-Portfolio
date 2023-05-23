@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="image/portfolio-profissional.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 
 </head>
@@ -26,7 +27,7 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#cardsPro">Projetos</a></li>
-                <li><a href="#cardsAbitly">Conhecimento</a></li>
+                <li><a href="#cardsAbitly">Contanto</a></li>
                 <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png"
                             alt="modo claro" class="icon">
                     </label></li>
@@ -35,18 +36,16 @@
     </header>
     <section>
         <div class="divDivision" id="Home">
-            <div id="imgMe">
-                <img src="image/danga.png" alt="Sou eu" style=" width: 500px;">
-            </div>
             <div id="infoMe">
                 <h3>Olá, sou</h3>
                 <h1 class="tit">Deyvid Gustavo</h1>
                 <h3>E sou um Desenvolvedor</h3>
                 <button class="iconLink"><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"
-                        class="link"><img src="image/linkedin-light-mode.png" alt="LinkedIn"
-                            class="IconLinkedIn"></a></button>
-                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><img
-                            src="image/github-light-mode.png" alt="GitHub" class="IconGitHub"></a></button>
+                        class="link"><i class="fa-brands fa-linkedin fa-xl"></i></a></button>
+                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><i class="fa-brands fa-github fa-xl"></i></a></button>
+            </div>
+            <div id="imgMe">
+                <img src="image/danga.png" alt="Sou eu" style=" width: 500px;">
             </div>
         </div>
         <hr>
@@ -60,6 +59,83 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit voluptate esse est, odit at
                     reprehenderit mollitia recusandae, tenetur cupiditate assumenda eveniet soluta voluptatum, veritatis
                     optio! Veritatis ipsum tempora hic.</p>
+                <ul>
+                    <li>
+                        <p><span>From</span>: Pernambuco, Brazil</p>
+                    </li>
+                    <li>
+                        <p><span>Age</span>: 18 years</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="titulo">My Skills</h1>
+        <div class="divDivision" id="MySkills">
+            <div class="cardLanguages">
+                <img src="image/html-5.png" alt="html-5">
+                <div class="content">
+                    <h1>HTML & CSS</h1>
+                    <p>Desenvolvo e estudo essa linguagens a 2 anos</p>
+                    <p>Meus projetos com essas linguagens <a href="https://github.com/degu0/Schron" target="_blank">Schron</a>, <a href="https://github.com/degu0/Library_ETE" target="_blank">Library</a>, <a href="https://github.com/degu0/my_calculator" target="_blank">Calculadora</a></p>
+                    <div class="w1">
+                        <div class="w12">83%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardLanguages">
+                <img src="image/react.png" alt="react">
+                <div class="content">
+                    <h1>REACT</h1>
+                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
+                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
+                    <div class="w2">
+                        <div class="w22">16%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardLanguages">
+                <img src="image/js.png" alt="JavaScript">
+                <div class="content">
+                    <h1>JAVASCRIPT</h1>
+                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
+                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
+                    <div class="w3">
+                        <div class="w32">83%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardLanguages">
+                <img src="image/php.png" alt="php">
+                <div class="content">
+                    <h1>PHP</h1>
+                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
+                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
+                    <div class="w4">
+                        <div class="w42">33%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardLanguages">
+                <img src="image/mysql.png" alt="MySQL">
+                <div class="content">
+                    <h1>MY SQL</h1>
+                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
+                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
+                    <div class="w5">
+                        <div class="w52">33%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardLanguages">
+                <img src="image/python.png" alt="Python">
+                <div class="content">
+                    <h1>PYTHON</h1>
+                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
+                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
+                    <div class="w6">
+                        <div class="w62">16%</div>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -67,101 +143,63 @@
         <div class="divDivision" id="cardsPro">
             <div class="cardProjects" data-anime="left">
                 <img src="image/Schron.png" alt="Schron">
-                <div>
+                <div class="card">
                     <h2>Schron</h2><br>
-                    <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer ensino. Possibilitando gestores das escolas concluírem de forma rápida e eficiente os horários.</p>
+                    <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer
+                        ensino. Possibilitando gestores das escolas concluírem de forma rápida e eficiente os horários.
+                    </p>
                     <div class="linksProjects">
                         <a href="https://github.com/degu0/Schron" id="idLinkGutHub" target="_blank">
-                            <img src="image/github-dark-mode.png" alt="">
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="cardProjects" data-anime="right">
                 <img src="image/Library.png" alt="Library" id="library">
-                <div>
+                <div class="card">
                     <h2>Library</h2><br>
-                    <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da Escola Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados simplificado e fácil de usar, os usuário poderão facilmente gerenciar o acervo da biblioteca.</p>
+                    <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da Escola
+                        Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados simplificado e
+                        fácil de usar, os usuário poderão facilmente gerenciar o acervo da biblioteca.</p>
                     <div class="linksProjects">
                         <a href="https://github.com/degu0/Library_ETE" id="idLinkGutHub" target="_blank">
-                            <img src="image/github-dark-mode.png" alt="">
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="cardProjects" data-anime="left">
                 <img src="image/Calculator.png" alt="Calculator">
-                <div>
+                <div class="card">
                     <h2>Calculator</h2><br>
                     <p>Um calculadora responsive, usando a linguagens HTML, CSS e JavaScript</p>
                     <div class="linksProjects">
                         <a href="https://github.com/degu0/my_calculator" id="idLinkGutHub" target="_blank">
-                            <img src="image/github-dark-mode.png" alt="">
+                            <i class="fa-brands fa-github fa-xl"></i>
                         </a>
                         <a href="https://degu0.github.io/my_calculator/" target="_blank">
-                            <img src="image/linkedin-dark-mode.png" alt="">
+                            <i class="fa-solid fa-link"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="cardProjects" data-anime="right">
                 <img src="image/EmBreve-light-mode.png" alt="Em breve mais um projeto" id="EmBreve">
-                <div>
+                <div class="card">
                     <h2>Em Breve</h2><br>
                     <p>Em breve mais projetos! Com novas linguagens e aprendizagens.</p>
                 </div>
             </div>
         </div>
         <hr>
-        <h1 class="titulo">Habilidades</h1>
-        <div class="divDivision" id="cardsAbitly">
-            <div class="cardLanguages" data-anime="top">
-                <img src="image/html-5.png" alt="html-5">
-                <div class="content">
-                    <h1>HTML</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                </div>
-            </div>
-            <div class="cardLanguages" data-anime="top">
-                <img src="image/css-3.png" alt="css-3">
-                <div class="content">
-                    <h1>CSS</h1>
-                    <p>Linguagem usada para estilizar a página da web.</p>
-                    <p>Desenvolvo e estudo com css à 2 anos e tenho 3 projetos postados</p>
-                </div>
-            </div>
-            <div class="cardLanguages" data-anime="top">
-                <img src="image/js.png" alt="JavaScript">
-                <div class="content">
-                    <h1>JavaScript</h1>
-                    <p>Linguagem de programação usada para tornar as páginas mais interativas.</p>
-                    <p>Programo e estudo à 2 anos com JavaScript e tenho 2 projetos postados</p>
-                </div>
-            </div>
-            <div class="cardLanguages" data-anime="bottom">
-                <img src="image/python.png" alt="Python">
-                <div class="content">
-                    <h1>Python</h1>
-                    <p>Linguagem de programação de alto nível, interpretada e orientada a objetos.</p>
-                    <p>Programo e estudo à 2 anos com Python e tenho 1 projeto postado.</p>
-                </div>
-            </div>
-            <div class="cardLanguages" data-anime="bottom">
-                <img src="image/php.png" alt="Php">
-                <div class="content">
-                    <h1>PHP</h1>
-                    <p>Linguagem de programação usada para criar aplicativos da Web dinâmicos.</p>
-                    <p>Programo e estudo à 1 ano com PHP e tenho 2 projetos postados</p>
-                </div>
-            </div>
-            <div class="cardLanguages" data-anime="bottom">
-                <img src="image/mysql.png" alt="MySql">
-                <div class="content">
-                    <h1>MySql</h1>
-                    <p>É um software usado para gerenciar bancos de dados relacionais em aplicações web.</p>
-                    <p>Programo e estudo à 3 anos e tenho 2 projetos postados</p>
-                </div>
+        <h1 class="titulo">Contanto</h1>
+        <div class="divDivision" id="Contact">
+            <div class="contato">
+                <input type="text">
+                <input type="email"><br>
+                <textarea name="texto" id="texto" cols="113" rows="14"></textarea><br>
+                <input type="submit" value="Enviar" id="button">
             </div>
         </div>
     </section>
@@ -169,14 +207,16 @@
     <footer class="footerDivision">
         <div id="copy">
             <p>Me chamo Deyvid Gustavo Correia de Sousa</p>
-            <p>Email para contanto: yatog2013@gmail.com</p>
+            <p>Email para contanto: <span>yatog2013@gmail.com</span></p>
         </div>
         <div id="network">
             <p>Mais redes de contanto:</p>
-            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"><img
-                    src="image/linkedin-light-mode.png" alt="LinkedIn" class="IconLinkedIn"></a>
-            <a href="https://github.com/degu0" target="_blank"><img src="image/github-light-mode.png" alt="GitHub"
-                    class="IconGitHub"></a>
+            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+            <a href="https://github.com/degu0" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
         </div>
     </footer>
     <script src="script/script.js"></script>

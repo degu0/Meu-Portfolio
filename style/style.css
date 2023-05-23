@@ -1,5 +1,7 @@
 /* Gerais */
-@import url('https://fonts.googleapis.com/css2?family=Anuphan&family=Courier+Prime&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100;200;300;400&family=Courier+Prime:wght@400;700&family=Mulish:wght@200;300;400;500&display=swap');
+
 
 * {
     margin: 0;
@@ -23,6 +25,11 @@
     --fontH1Home: #9c3cf1;
 }
 
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
 html,
 body {
     min-height: 100vh;
@@ -37,7 +44,8 @@ body {
 .titulo {
     color: var(--font);
     text-align: center;
-    font: normal 30px 'Anuphan', sans-serif;
+    font: normal 3rem 'Anuphan', sans-serif;
+    margin-bottom: 1rem;
 }
 
 [data-anime] {
@@ -71,7 +79,11 @@ label {
 }
 
 hr {
-    color: var(--bg-invertido);
+    color: #212529;
+}
+
+span {
+    font-weight: bold;
 }
 
 
@@ -82,9 +94,9 @@ hr {
 }
 
 #logo {
-    font-size: 25px;
+    font-size: 2.5rem;
     text-decoration: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: .4rem;
     text-decoration: none;
     color: var(--font);
     font-family: 'Chivo mono', monospace;
@@ -112,9 +124,9 @@ hr {
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s ease;
-    padding: 0 20px;
-    line-height: 60px;
-    font-size: 15px;
+    padding: 0 2rem;
+    line-height: 6rem;
+    font-size: 1.5rem;
     font-family: 'Chivo mono', monospace;
     font-weight: 600;
 }
@@ -135,7 +147,7 @@ hr {
 
 #chk-mode {
     display: block;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 .mobile-menu {
@@ -144,10 +156,10 @@ hr {
 }
 
 .mobile-menu div {
-    width: 32px;
-    height: 2px;
+    width: 3.2rem;
+    height: .2rem;
     background: var(--bg-invertido);
-    margin: 8px;
+    margin: .8rem;
     transition: 0.3s;
 }
 
@@ -194,6 +206,7 @@ hr {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -202,15 +215,15 @@ hr {
 
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
+}
+
+.mobile-menu.active .line2 {
     opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
+}
+
+.mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-  }
+}
 
 
 /* Home */
@@ -222,18 +235,18 @@ hr {
 }
 
 #imgMe {
-    width: 500px;
+    width: 50rem;
 }
 
 #infoMe h3 {
     color: var(--fontHome);
-    font: normal 37px 'Courier Prime', monospace;
+    font: normal 3.7rem 'Courier Prime', monospace;
 }
 
 
 #infoMe h1::after {
     content: '|';
-    margin-left: 5px;
+    margin-left: .5rem;
     opacity: 1;
     animation: pisca .7s infinite;
 }
@@ -252,18 +265,19 @@ hr {
 
 #infoMe h1 {
     color: var(--fontH1Home);
-    font: normal 42px 'Courier Prime', monospace;
+    font: normal 4.2rem 'Courier Prime', monospace;
     ;
 }
+
 
 .iconLink {
     background-color: var(--bg);
     border-radius: 50%;
     border: none;
     overflow: hidden;
-    width: 38px;
-    height: 38px;
-    margin: 10px 20px 0px 0px;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 1rem 2rem 0 0;
     outline: 1px solid #540b98;
     transition-property:
         outline-offset, outline-color;
@@ -313,34 +327,36 @@ hr {
 }
 
 #pic {
-    width: 300px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
 }
 
 #info {
-    width: 700px;
-    height: 180px;
+    width: 70rem;
+    height: 18rem;
     color: var(--font);
 }
 
 #titleAbout {
     text-align: start;
-    margin-bottom: 10px;
-    font: normal 35px 'Anuphan', sans-serif;
+    margin-bottom: 1rem;
+    font: normal 3.5rem 'Anuphan', sans-serif;
 }
 
 #subTitleAbout {
-    margin-bottom: 15px;
-    font: normal 25px 'Anuphan', sans-serif;
+    margin-bottom: 1.5rem;
+    font: normal 2.5rem 'Anuphan', sans-serif;
 }
 
 #info p {
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;  
+    line-height: 2.5rem;
 }
 
 #subTitleAbout::after {
     content: '|';
-    margin-left: 5px;
+    margin-left: .5rem;
     opacity: 1;
     animation: pisca .7s infinite;
 }
@@ -350,7 +366,7 @@ hr {
 
 
 #cardsPro {
-    height: 1400px;
+    height: 140rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-content: space-evenly;
@@ -359,30 +375,45 @@ hr {
 
 .cardProjects {
     background-color: var(--bg-invertido);
-    width: 855px;
-    height: 220px;
-    border-radius: 20px;
+    width: 85.5rem;
+    height: 22rem;
+    border-radius: 2rem;
     display: flex;
     text-align: center;
     color: var(--font-invertida);
 }
 
 .cardProjects h2 {
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 .linksProjects {
-    margin-top: 30px;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-around;
-}   
-
-.linksProjects a{
-    text-decoration: none;
-    color: var(--font-invertida);
 }
 
-#library { 
+.linksProjects a {
+    text-decoration: none;
+    color: var(--font-invertida);
+    font-family: 'Mulish', sans-serif;
+}
+
+.card h2 {
+    font-size: 2rem;
+    font-family: 'Anuphan', sans-serif;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+.card a {
+    font-size: 1.8rem;
+}
+
+#library {
     order: 1;
 }
 
@@ -401,43 +432,40 @@ hr {
 
 /* Habilidades */
 
-#cardsAbitly {
+#MySkills {
+    height: 45.4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: space-evenly;
     justify-items: center;
 }
 
-.cardLanguages {
-    width: 200px;
-    height: 188px;
-    border-radius: 40px;
-    background-color: var(--bg-invertido);
-    box-shadow: 0px 15px 20px rgba(0, 0, 0.2);
-}
-
 .cardLanguages h1 {
-    margin: 2px 0px 10px 0px;
+    margin: .2rem 0 1rem 0;
     font-family: 'Anuphan', sans-serif;
     text-align: center;
+    color: var(--font);
 }
 
 .cardLanguages p {
-    text-indent: 5px;
-    font: normal 15px 'Roboto', sans-serif;
+    text-indent: .5rem;
+    font: normal 1.5rem 'Mulish', sans-serif;
     text-align: center;
+    color: var(--font);
+}
+
+.cardLanguages a {
+    color: var(--bg);
+    font: normal 1.5rem 'Mulish', sans-serif;;
+    text-align: center;
+    text-decoration: none;
+    color: #9c3cf1;
 }
 
 .cardLanguages img {
     margin: auto;
     display: block;
     transform: translate(0px, 60px);
-}
-
-.cardLanguages:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0.2);
-    transition: transform .3s, border 1s;
 }
 
 .cardLanguages:hover img {
@@ -448,10 +476,7 @@ hr {
     transition: .5s ease-in-out;
     margin-top: -64px;
     opacity: 0;
-    background: linear-gradient(0deg, var(--fontH1Home), transparent);
-    width: 200px;
-    height: 188px;
-    border-radius: 40px;
+    height: 22.5rem;
 }
 
 .cardLanguages:hover .content {
@@ -459,6 +484,38 @@ hr {
     opacity: 1;
     color: var(--bg);
 }
+
+.w1, .w2, .w3, .w4, .w5, .w6 {
+    height: 1.8rem;
+    width: 20rem;
+    background-color: #1D1C1D;
+    border-radius: 1rem;
+    margin: 4.5rem auto;
+}
+
+.w12, .w22, .w32, .w42, .w52, .w62 {
+    height: 100%;
+    background-color:#540b98;
+    color: var(--font-invertida);
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.w12, .w32 {
+    width: 83%;
+}
+.w42, .w52 {
+    width: 33%;
+}
+.w22, .w62 {
+    width: 16%;
+}
+
+
 
 @media screen and (max-width: 670px) {
 
@@ -468,14 +525,65 @@ hr {
 
 }
 
+/* Contato */
+
+
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato {
+    font-family: 'Mulish', sans-serif;
+}
+
+.contato input {
+    height: 2rem;
+    width: 30vw;
+    border-radius: 7px;
+    background-color: var(--bg-invertido);
+    border: 2px solid var(--bg);
+    padding: 2px;
+    margin-bottom: 1rem;
+    color: var(--font-invertida);
+}
+
+.contato textarea {
+    background-color: var(--bg-invertido);
+    border-radius: 7px;
+    border: 2px solid var(--bg);
+    width: 61vw;
+    color: var(--font-invertida);
+}
+
+#button {
+    border: none;
+    border-radius: 5px;
+    background-color: #41007e;
+    color: var(--font-invertida);
+    width: 20vw;
+    height: 3rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Footer */
 
 
 .footerDivision {
     color: var(--font);
-    height: 120px;
+    height: 12rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+}
+
+#network a { 
+    text-decoration: none;
+    color: var(--font);
 }
