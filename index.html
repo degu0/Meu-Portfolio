@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="image/portfolio-profissional.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 
 </head>
@@ -27,9 +29,9 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#cardsPro">Projetos</a></li>
-                <li><a href="#cardsAbitly">Contanto</a></li>
+                <li><a href="#Contact">Contanto</a></li>
                 <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png"
-                            alt="modo claro" class="icon">
+                            alt="modo claro" class="icon" id="icon-modo-escuro">
                     </label></li>
             </ul>
         </nav>
@@ -42,107 +44,119 @@
                 <h3>E sou um Desenvolvedor</h3>
                 <button class="iconLink"><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"
                         class="link"><i class="fa-brands fa-linkedin fa-xl"></i></a></button>
-                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><i class="fa-brands fa-github fa-xl"></i></a></button>
+                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><i
+                            class="fa-brands fa-github fa-xl"></i></a></button>
             </div>
             <div id="imgMe">
-                <img src="image/danga.png" alt="Sou eu" style=" width: 500px;">
+                <img src="image/Home3.png" alt="Sou eu">
             </div>
         </div>
         <hr>
-        <div class="divDivision" id="about">
-            <div id="pic">
-                <img src="image/it_s_me-removebg-preview.png" alt="Me em pic" style=" width: 320px; height: 300px;">
+        <div class="about-me">
+            <div class="divDivision" id="about">
+                <div id="pic">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="image/About_Mobile.png">
+                    </picture>
+                    <img src="image/About.png" alt="Me em pic" style="height: 300px;">
+                </div>
+                <div id="info">
+                    <h1 id="titleAbout">Sobre mim</h1>
+                    <h3 class="subtit" id="subTitleAbout">Desenvolvedor</h3>
+                    <p>Eu sou iniciante do mundo da programação. Comecei a estudar por conta da escola, mas com meu primeiro contato com o famoso "Hello World" foi apenas o início de uma paixão que só cresce a cada dia. Desde então, tenho me dedicado arduamente a aprimorar meus conhecimentos, buscando sempre novos desafios e aprendizados.</p>
+                    <ul style="list-style: none;">
+                        <li>
+                            <p><span>Estado</span>: Pernambuco, Brazil</p>
+                        </li>
+                        <li>
+                            <p><span>Idade</span>: 18 years</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="info">
-                <h1 id="titleAbout">Sobre mim</h1>
-                <h3 class="subtit" id="subTitleAbout">Desenvolvedor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit voluptate esse est, odit at
-                    reprehenderit mollitia recusandae, tenetur cupiditate assumenda eveniet soluta voluptatum, veritatis
-                    optio! Veritatis ipsum tempora hic.</p>
-                <ul>
-                    <li>
-                        <p><span>From</span>: Pernambuco, Brazil</p>
-                    </li>
-                    <li>
-                        <p><span>Age</span>: 18 years</p>
-                    </li>
-                </ul>
+            <h1 class="titulo">My Skills</h1>
+            <div class="divDivision" id="MySkills">
+                <div class="cardLanguages">
+                    <div id="images-languages">
+                        <img src="image/html-5.png" alt="html-5">
+                        <img src="image/css-3.png" alt="html-5">
+                    </div>
+                    <div class="content">
+                        <h1>HTML & CSS</h1>
+                        <p>Desenvolvo e estudo essas linguagens à 2 anos.</p>
+                        <p>Foram uns dos primeiros estudos que eu tive no meu curso.</p>
+                        <div class="w1">
+                            <div class="w12">83%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardLanguages">
+                    <img src="image/react.png" alt="react">
+                    <div class="content">
+                        <h1>REACT</h1>
+                        <p>Desenvolvo e estudo essa linguagem à 2 messes</p>
+                        <p>Com a busca de especializar como programador front-end, comecei a estudar essa linguagem</p>
+                        <div class="w2">
+                            <div class="w22">16%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardLanguages">
+                    <img src="image/js.png" alt="JavaScript">
+                    <div class="content">
+                        <h1>JAVASCRIPT</h1>
+                        <p>Desenvolvo e estudo essa linguagem à 2 anos.</p>
+                        <p>Junto com HTML e CSS, estudei junto no meu curso.</p>
+                        <div class="w3">
+                            <div class="w32">83%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardLanguages">
+                    <img src="image/php.png" alt="php">
+                    <div class="content">
+                        <h1>PHP</h1>
+                        <p>Desenvolvo e estudo essa linguagem à 1 ano.</p>
+                        <p>No meu curso tive que estudar além do front-end. Com isso, linguagem para back-end que
+                            estudei foi o php</p>
+                        <div class="w4">
+                            <div class="w42">33%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardLanguages">
+                    <img src="image/mysql.png" alt="MySQL">
+                    <div class="content">
+                        <h1>MY SQL</h1>
+                        <p>Desenvolvo e estudo essa linguagem à 3 anos.</p>
+                        <p>Diferente dos outros, passei um 1 ano estudando a teoria, para depois desenvolver projetos
+                            com a linguagem.</p>
+                        <div class="w5">
+                            <div class="w52">33%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardLanguages">
+                    <img src="image/python.png" alt="Python">
+                    <div class="content">
+                        <h1>PYTHON</h1>
+                        <p>Desenvolvo e estudo essa linguagem à 3 anos.</p>
+                        <p>Foi a primeira linguagem que tive contanto e com ele que me apaixonei com a programação</p>
+                        <div class="w6">
+                            <div class="w62">16%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <hr>
         </div>
-        <h1 class="titulo">My Skills</h1>
-        <div class="divDivision" id="MySkills">
-            <div class="cardLanguages">
-                <img src="image/html-5.png" alt="html-5">
-                <div class="content">
-                    <h1>HTML & CSS</h1>
-                    <p>Desenvolvo e estudo essa linguagens a 2 anos</p>
-                    <p>Meus projetos com essas linguagens <a href="https://github.com/degu0/Schron" target="_blank">Schron</a>, <a href="https://github.com/degu0/Library_ETE" target="_blank">Library</a>, <a href="https://github.com/degu0/my_calculator" target="_blank">Calculadora</a></p>
-                    <div class="w1">
-                        <div class="w12">83%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardLanguages">
-                <img src="image/react.png" alt="react">
-                <div class="content">
-                    <h1>REACT</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                    <div class="w2">
-                        <div class="w22">16%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardLanguages">
-                <img src="image/js.png" alt="JavaScript">
-                <div class="content">
-                    <h1>JAVASCRIPT</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                    <div class="w3">
-                        <div class="w32">83%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardLanguages">
-                <img src="image/php.png" alt="php">
-                <div class="content">
-                    <h1>PHP</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                    <div class="w4">
-                        <div class="w42">33%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardLanguages">
-                <img src="image/mysql.png" alt="MySQL">
-                <div class="content">
-                    <h1>MY SQL</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                    <div class="w5">
-                        <div class="w52">33%</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cardLanguages">
-                <img src="image/python.png" alt="Python">
-                <div class="content">
-                    <h1>PYTHON</h1>
-                    <p>Linguagem de marcação usada para criar a estrutura e o conteúdo de uma página da web.</p>
-                    <p>Desenvolvo e estudo com html à 3 anos e tenho 3 projetos postado.</p>
-                    <div class="w6">
-                        <div class="w62">16%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h1 class="titulo">Projetos</h1>
         <div class="divDivision" id="cardsPro">
-            <div class="cardProjects" data-anime="left">
-                <img src="image/Schron.png" alt="Schron">
+            <h1 class="titulo">Projetos</h1>
+            <div class="cardProjects" data-anime="left" id="card-schron">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="image/Schron_Mobile.png">
+                    <img src="image/Schron.png" alt="Schron" class="pic-project">
+                </picture>
                 <div class="card">
                     <h2>Schron</h2><br>
                     <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer
@@ -155,9 +169,12 @@
                     </div>
                 </div>
             </div>
-            <div class="cardProjects" data-anime="right">
-                <img src="image/Library.png" alt="Library" id="library">
-                <div class="card">
+            <div class="cardProjects" data-anime="right" id="card-library">
+                <picture class="pic-order">
+                    <source media="(max-width: 650px)" srcset="image/Library_Mobile.png">
+                    <img src="image/Library.png" alt="Library" class="pic-project">
+                </picture>
+                <div class="card" id="card-information-library">
                     <h2>Library</h2><br>
                     <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da Escola
                         Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados simplificado e
@@ -169,8 +186,11 @@
                     </div>
                 </div>
             </div>
-            <div class="cardProjects" data-anime="left">
-                <img src="image/Calculator.png" alt="Calculator">
+            <div class="cardProjects" data-anime="left" id="card-calculator" >
+                <picture>
+                    <source media="(max-width: 650px)" srcset="image/Calculator_Mobile.png">
+                    <img src="image/Calculator.png" alt="Calculator" class="pic-project" id="pic-calculator">
+                </picture>
                 <div class="card">
                     <h2>Calculator</h2><br>
                     <p>Um calculadora responsive, usando a linguagens HTML, CSS e JavaScript</p>
@@ -184,11 +204,20 @@
                     </div>
                 </div>
             </div>
-            <div class="cardProjects" data-anime="right">
-                <img src="image/EmBreve-light-mode.png" alt="Em breve mais um projeto" id="EmBreve">
+            <div class="cardProjects" data-anime="right" id="card-cost">
+                <picture class="pic-order">
+                    <source media="(max-width: 650px)" srcset="image/Cost_Mobile.png">
+                    <img src="image/Cost.png" alt="Cost" class="pic-project">
+                </picture>
                 <div class="card">
-                    <h2>Em Breve</h2><br>
-                    <p>Em breve mais projetos! Com novas linguagens e aprendizagens.</p>
+                    <h2>Cost</h2><br>
+                    <p>Primeiro projeto feito com React. Um site por fins de ajudar no gerenciamentos dos seus projetos,
+                        parte financeira.</p>
+                    <div class="linksProjects">
+                        <a href="https://github.com/degu0/Cost" id="idLinkGutHub" target="_blank">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,8 +225,8 @@
         <h1 class="titulo">Contanto</h1>
         <div class="divDivision" id="Contact">
             <div class="contato">
-                <input type="text">
-                <input type="email"><br>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email"><br>
                 <textarea name="texto" id="texto" cols="113" rows="14"></textarea><br>
                 <input type="submit" value="Enviar" id="button">
             </div>
@@ -213,7 +242,7 @@
             <p>Mais redes de contanto:</p>
             <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank">
                 <i class="fa-brands fa-linkedin fa-xl"></i>
-                </a>
+            </a>
             <a href="https://github.com/degu0" target="_blank">
                 <i class="fa-brands fa-github fa-xl"></i>
             </a>
