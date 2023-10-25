@@ -356,7 +356,7 @@ span {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 #pic {
@@ -394,12 +394,28 @@ span {
     opacity: 1;
     animation: pisca .7s infinite;
 }
+
+.my_skills {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
 @media screen and (max-width: 650px) {
     #about {
-        height: 150vh;
+        height: 200vh;
         flex-direction: column;
         justify-content: start;
         margin-top: 25rem;
+    }
+
+    #info p {
+        width: 80vw;
+    }
+
+    .my_skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     }
 }
 
@@ -486,7 +502,7 @@ span {
 
 @media screen and (max-width: 650px) {
     #cardsPro {
-        height: 320vh;
+        height: 400vh;
     }
 
     .cardProjects {
@@ -510,18 +526,21 @@ span {
         margin-top: 2rem;
     }
 
-    #card-cost,
-    #card-calculator {
-        height: 58vh;
+    #card-cost{
+        height: 65vh;
+    }
+
+    #card-barber{
+        height: 97vh;
     }
 
     #card-schron {
-        height: 65vh;
+        height: 75vh;
         margin: 0 0 5rem 0;
     }
 
     #card-library {
-        height: 65vh;
+        height: 75vh;
     }
 
     .pic-order {

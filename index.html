@@ -29,7 +29,6 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#cardsPro">Projetos</a></li>
-                <li><a href="#Contact">Contanto</a></li>
                 <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png"
                             alt="modo claro" class="icon" id="icon-modo-escuro">
                     </label></li>
@@ -63,7 +62,10 @@
                 <div id="info">
                     <h1 id="titleAbout">Sobre mim</h1>
                     <h3 class="subtit" id="subTitleAbout">Desenvolvedor</h3>
-                    <p>Eu sou iniciante do mundo da programação. Comecei a estudar por conta da escola, mas com meu primeiro contato com o famoso "Hello World" foi apenas o início de uma paixão que só cresce a cada dia. Desde então, tenho me dedicado arduamente a aprimorar meus conhecimentos, buscando sempre novos desafios e aprendizados.</p>
+                    <p>Eu sou iniciante do mundo da programação. Comecei a estudar por conta da escola, mas com meu
+                        primeiro contato com o famoso "Hello World" foi apenas o início de uma paixão que só cresce a
+                        cada dia. Desde então, tenho me dedicado arduamente a aprimorar meus conhecimentos, buscando
+                        sempre novos desafios e aprendizados.</p>
                     <ul style="list-style: none;">
                         <li>
                             <p><span>Estado</span>: Pernambuco, Brazil</p>
@@ -71,166 +73,118 @@
                         <li>
                             <p><span>Idade</span>: 18 years</p>
                         </li>
+                        <li>
+                            <p><span>Minhas Skills:</span></p>
+                            <ul class="my_skills">
+                                <li> <img alt="Degu-HTML" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                </li>
+                                <li><img alt="Degu-CSS" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                </li>
+                                <li><img alt="Degu-Js" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                                </li>
+                                <li><img alt="Degu-Python" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+                                </li>
+                                <li><img alt="Degu-PHP" height="30" width="30"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"></li>
+                                <li><img alt="Degu-React" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+                                </li>
+                                <li><img alt="Degu-Typescript" height="30" width="30"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg">
+                                </li>
+                                <li><img alt="Degu-NodeJs" height="30" width="30"
+                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg">
+                                </li>
+                                <li><img alt="Degu-MySql" height="40" width="40"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+                                </li>
+                                <li><img alt="Degu-PostgreSql" height="30" width="30"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <h1 class="titulo">My Skills</h1>
-            <div class="divDivision" id="MySkills">
-                <div class="cardLanguages">
-                    <div id="images-languages">
-                        <img src="image/html-5.png" alt="html-5">
-                        <img src="image/css-3.png" alt="html-5">
-                    </div>
-                    <div class="content">
-                        <h1>HTML & CSS</h1>
-                        <p>Desenvolvo e estudo essas linguagens à 2 anos.</p>
-                        <p>Foram uns dos primeiros estudos que eu tive no meu curso.</p>
-                        <div class="w1">
-                            <div class="w12">83%</div>
+            <div class="divDivision" id="cardsPro">
+                <h1 class="titulo">Projetos</h1>
+                <div class="cardProjects" data-anime="left" id="card-schron">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="image/Schron_Mobile.png">
+                        <img src="image/Schron.png" alt="Schron" class="pic-project">
+                    </picture>
+                    <div class="card">
+                        <h2>Schron</h2><br>
+                        <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer
+                            ensino. Possibilitando gestores das escolas concluírem de forma rápida e eficiente os
+                            horários.
+                        </p>
+                        <div class="linksProjects">
+                            <a href="https://github.com/degu0/Schron" id="idLinkGutHub" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cardLanguages">
-                    <img src="image/react.png" alt="react">
-                    <div class="content">
-                        <h1>REACT</h1>
-                        <p>Desenvolvo e estudo essa linguagem à 2 messes</p>
-                        <p>Com a busca de especializar como programador front-end, comecei a estudar essa linguagem</p>
-                        <div class="w2">
-                            <div class="w22">16%</div>
+                <div class="cardProjects" data-anime="right" id="card-library">
+                    <picture class="pic-order">
+                        <source media="(max-width: 650px)" srcset="image/Library_Mobile.png">
+                        <img src="image/Library.png" alt="Library" class="pic-project">
+                    </picture>
+                    <div class="card" id="card-information-library">
+                        <h2>Library</h2><br>
+                        <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da
+                            Escola
+                            Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados
+                            simplificado e
+                            fácil de usar, os usuário poderão facilmente gerenciar o acervo da biblioteca.</p>
+                        <div class="linksProjects">
+                            <a href="https://github.com/degu0/Library_ETE" id="idLinkGutHub" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cardLanguages">
-                    <img src="image/js.png" alt="JavaScript">
-                    <div class="content">
-                        <h1>JAVASCRIPT</h1>
-                        <p>Desenvolvo e estudo essa linguagem à 2 anos.</p>
-                        <p>Junto com HTML e CSS, estudei junto no meu curso.</p>
-                        <div class="w3">
-                            <div class="w32">83%</div>
+                <div class="cardProjects" data-anime="left" id="card-barber">
+                    <picture>
+                        <source media="(max-width: 650px)" srcset="image/Barba&Co_Moblie.png">
+                        <img src="image/Barba&Co.png" alt="Barber-shop" class="pic-project" id="pic-barber">
+                    </picture>
+                    <div class="card">
+                        <h2>Barba & Co</h2><br>
+                        <p>Este projeto é um site para uma barbearia, com design responsivo e usabilidade intuitiva. O objetivo é proporcionar aos clientes uma interface moderna e amigável, onde eles possam conhecer os serviços oferecidos, agendar horários, obter informações sobre os barbeiros e entrar em contato.</p>
+                        <div class="linksProjects">
+                            <a href="https://github.com/degu0/Barber-shop" id="idLinkGutHub" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
+                            <a href="https://barber-shop-dun.vercel.app/" target="_blank">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cardLanguages">
-                    <img src="image/php.png" alt="php">
-                    <div class="content">
-                        <h1>PHP</h1>
-                        <p>Desenvolvo e estudo essa linguagem à 1 ano.</p>
-                        <p>No meu curso tive que estudar além do front-end. Com isso, linguagem para back-end que
-                            estudei foi o php</p>
-                        <div class="w4">
-                            <div class="w42">33%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardLanguages">
-                    <img src="image/mysql.png" alt="MySQL">
-                    <div class="content">
-                        <h1>MY SQL</h1>
-                        <p>Desenvolvo e estudo essa linguagem à 3 anos.</p>
-                        <p>Diferente dos outros, passei um 1 ano estudando a teoria, para depois desenvolver projetos
-                            com a linguagem.</p>
-                        <div class="w5">
-                            <div class="w52">33%</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardLanguages">
-                    <img src="image/python.png" alt="Python">
-                    <div class="content">
-                        <h1>PYTHON</h1>
-                        <p>Desenvolvo e estudo essa linguagem à 3 anos.</p>
-                        <p>Foi a primeira linguagem que tive contanto e com ele que me apaixonei com a programação</p>
-                        <div class="w6">
-                            <div class="w62">16%</div>
+                <div class="cardProjects" data-anime="right" id="card-cost">
+                    <picture class="pic-order">
+                        <source media="(max-width: 650px)" srcset="image/Cost_Mobile.png">
+                        <img src="image/Cost.png" alt="Cost" class="pic-project">
+                    </picture>
+                    <div class="card">
+                        <h2>Cost</h2><br>
+                        <p>Primeiro projeto feito com React. Um site por fins de ajudar no gerenciamentos dos seus
+                            projetos,
+                            parte financeira.</p>
+                        <div class="linksProjects">
+                            <a href="https://github.com/degu0/Cost" id="idLinkGutHub" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-        </div>
-        <div class="divDivision" id="cardsPro">
-            <h1 class="titulo">Projetos</h1>
-            <div class="cardProjects" data-anime="left" id="card-schron">
-                <picture>
-                    <source media="(max-width: 650px)" srcset="image/Schron_Mobile.png">
-                    <img src="image/Schron.png" alt="Schron" class="pic-project">
-                </picture>
-                <div class="card">
-                    <h2>Schron</h2><br>
-                    <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer
-                        ensino. Possibilitando gestores das escolas concluírem de forma rápida e eficiente os horários.
-                    </p>
-                    <div class="linksProjects">
-                        <a href="https://github.com/degu0/Schron" id="idLinkGutHub" target="_blank">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardProjects" data-anime="right" id="card-library">
-                <picture class="pic-order">
-                    <source media="(max-width: 650px)" srcset="image/Library_Mobile.png">
-                    <img src="image/Library.png" alt="Library" class="pic-project">
-                </picture>
-                <div class="card" id="card-information-library">
-                    <h2>Library</h2><br>
-                    <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da Escola
-                        Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados simplificado e
-                        fácil de usar, os usuário poderão facilmente gerenciar o acervo da biblioteca.</p>
-                    <div class="linksProjects">
-                        <a href="https://github.com/degu0/Library_ETE" id="idLinkGutHub" target="_blank">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardProjects" data-anime="left" id="card-calculator" >
-                <picture>
-                    <source media="(max-width: 650px)" srcset="image/Calculator_Mobile.png">
-                    <img src="image/Calculator.png" alt="Calculator" class="pic-project" id="pic-calculator">
-                </picture>
-                <div class="card">
-                    <h2>Calculator</h2><br>
-                    <p>Um calculadora responsive, usando a linguagens HTML, CSS e JavaScript</p>
-                    <div class="linksProjects">
-                        <a href="https://github.com/degu0/my_calculator" id="idLinkGutHub" target="_blank">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                        </a>
-                        <a href="https://degu0.github.io/my_calculator/" target="_blank">
-                            <i class="fa-solid fa-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="cardProjects" data-anime="right" id="card-cost">
-                <picture class="pic-order">
-                    <source media="(max-width: 650px)" srcset="image/Cost_Mobile.png">
-                    <img src="image/Cost.png" alt="Cost" class="pic-project">
-                </picture>
-                <div class="card">
-                    <h2>Cost</h2><br>
-                    <p>Primeiro projeto feito com React. Um site por fins de ajudar no gerenciamentos dos seus projetos,
-                        parte financeira.</p>
-                    <div class="linksProjects">
-                        <a href="https://github.com/degu0/Cost" id="idLinkGutHub" target="_blank">
-                            <i class="fa-brands fa-github fa-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <h1 class="titulo">Contanto</h1>
-        <div class="divDivision" id="Contact">
-            <div class="contato">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email"><br>
-                <textarea name="texto" id="texto" cols="113" rows="14"></textarea><br>
-                <input type="submit" value="Enviar" id="button">
-            </div>
-        </div>
     </section>
     <hr>
     <footer class="footerDivision">
