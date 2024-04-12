@@ -15,191 +15,357 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
+
+    <nav class="menu">
+        <div class="nav-logo">
             <a href="" id="logo">
                 Portfolio
             </a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#cardsPro">Projetos</a></li>
-                <li><input type="checkbox" name="chk" id="chk"><label for="chk" id="chk-mode"><img src="image/moon.png"
-                            alt="modo claro" class="icon" id="icon-modo-escuro">
-                    </label></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="divDivision" id="Home">
-            <div id="infoMe">
-                <h3>Olá, sou</h3>
-                <h1 class="tit">Deyvid Gustavo</h1>
-                <h3>E sou um Desenvolvedor</h3>
-                <button class="iconLink"><a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank"
-                        class="link"><i class="fa-brands fa-linkedin fa-xl"></i></a></button>
-                <button class="iconLink"><a href="https://github.com/degu0" target="_blank" class="link"><i
-                            class="fa-brands fa-github fa-xl"></i></a></button>
-            </div>
-            <div id="imgMe">
-                <img src="image/Home.png" alt="Sou eu">
+        </div>
+        <ul class="nav-links">
+            <li id="link1" class="link"><a href="#home">Home</a></li>
+            <li id="link2" class="link"><a href="#about">About</a></li>
+            <li id="link3" class="link"><a href="#projects">Projetos</a></li>
+            <li id="link3" class="link"><a href="#contact">Contato</a></li>
+            <li>
+                <div class="toggle-switch">
+                    <label class="switch-label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="container" id="home">
+        <div class="content">
+            <H1>Olá, Eu sou <span>Deyvid</span>, Desenvolvedor</H1>
+            <p>Bem-vindo ao meu portifólio! Sou Deyvid, um desenvolvedor apaixonado por criar soluções inovadores e
+                funcionais.
+                Explore meu portifólio para ver alguns dos projetos que desenvolvi!
+            </p>
+            <div class="home-button">
+                <a href="https://github.com/degu0" target="_blank">
+                    <button class="button">
+                        <img src="image/logo/github.svg" alt="Logo_Github">
+                        <p class="text">Git Hub</p>
+                    </button>
+                </a>
+                <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank">
+                    <button class="button">
+                        <img src="image/logo/linkedin.svg" alt="Logo_Linkedin">
+                        <p class="text">LinkedIn</p>
+                    </button>
+                </a>
             </div>
         </div>
-        <hr>
-        <div class="about-me">
-            <div class="divDivision" id="about">
-                <div id="pic">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="image/About_Mobile.png">
-                    </picture>
-                    <img src="image/About.png" alt="Me em pic" style="height: 300px;">
+        <div class="image">
+            <img src="image/header.png">
+        </div>
+    </header>
+
+    <section class="container" id="about">
+        <div class="about">
+            <div class="pic" data-anime="left">
+                <picture>
+                    <source media="(max-width: 650px)" srcset="image/About_Mobile.png">
+                </picture>
+                <img src="image/About.png" alt="Me em pic" style="height: 300px;">
+            </div>
+            <div class="information" data-anime="right">
+                <h1 class="title-About">Sobre mim</h1>
+                <h3 class="subtit" id="sub-Title-About">Desenvolvedor</h3>
+                <p id="text-about-me">
+                    👨‍💻Desenvolvendo interfaces e APIs com Javascirpt/TypeScriot e PHP desde 2022
+                    <br>
+                    🎓Cursando Ciência da Computação
+                    <br>
+                    💻Interesse em desenvolvimento front end e back end
+                    <br>
+                    💼Buscando uma oportunidade para atuar como desenvolvedor
+                </p>
+                <hr>
+                <ul class="information-about-me">
+                    <li>
+                        <p><span>Nome</span>: Deyvid Gustavo</p>
+                    </li>
+                    <li>
+                        <p><span>Estado</span>: Pernambuco, Brazil</p>
+                    </li>
+                    <li>
+                        <p><span>Idade</span>: 18 years</p>
+                    </li>
+                    <li>
+                        <p><span>Email</span>: yatog2013@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container" id="projects">
+        <div class="title-project">
+            <h2>PROJETOS</h2>
+        </div>
+        <div class="nav-cards" data-anime="bottom">
+            <div class="card">
+                <div class="bolinhas">
+                    <div class="bolinha" id="red"></div>
+                    <div class="bolinha" id="yellow"></div>
+                    <div class="bolinha" id="green"></div>
                 </div>
-                <div id="info">
-                    <h1 id="titleAbout">Sobre mim</h1>
-                    <h3 class="subtit" id="subTitleAbout">Desenvolvedor</h3>
-                    <p>Eu sou iniciante do mundo da programação. Comecei a estudar por conta da escola, mas com meu
-                        primeiro contato com o famoso "Hello World" foi apenas o início de uma paixão que só cresce a
-                        cada dia. Desde então, tenho me dedicado arduamente a aprimorar meus conhecimentos, buscando
-                        sempre novos desafios e aprendizados.</p>
-                    <ul style="list-style: none;">
-                        <li>
-                            <p><span>Estado</span>: Pernambuco, Brazil</p>
-                        </li>
-                        <li>
-                            <p><span>Idade</span>: 18 years</p>
-                        </li>
-                        <li>
-                            <p><span>Minhas Skills:</span></p>
-                            <ul class="my_skills">
-                                <li> <img alt="Degu-HTML" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                                </li>
-                                <li><img alt="Degu-CSS" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                                </li>
-                                <li><img alt="Degu-Js" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                                </li>
-                                <li><img alt="Degu-Python" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-                                </li>
-                                <li><img alt="Degu-PHP" height="30" width="30"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg"></li>
-                                <li><img alt="Degu-React" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-                                </li>
-                                <li><img alt="Degu-Typescript" height="30" width="30"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg">
-                                </li>
-                                <li><img alt="Degu-NodeJs" height="30" width="30"
-                                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg">
-                                </li>
-                                <li><img alt="Degu-MySql" height="40" width="40"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
-                                </li>
-                                <li><img alt="Degu-PostgreSql" height="30" width="30"
-                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" />
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="image-project">
+                    <img src="image/card/Schron_card.png" alt="">
+                </div>
+                <div class="info-project">
+                    <div class="text-project">
+                        <h3 class="title">Schron</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div>
+                            <img src="image/languages/html-124-svgrepo-com.svg" alt="">
+                            <img src="image/languages/css3-02-svgrepo-com.svg" alt="">
+                            <img src="image/languages/javascript-155-svgrepo-com.svg" alt="">
+                            <img src="image/languages/php01-svgrepo-com.svg" alt="">
+                            <img src="image/languages/mysql-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="end-card">
+                        <div class="div-buttons">
+                            <a href="https://github.com/degu0/Schron" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/github.svg" alt="Logo_Github">
+                                    <p class="text">Git Hub</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="divDivision" id="cardsPro">
-                <h1 class="titulo">Projetos</h1>
-                <div class="cardProjects" data-anime="left" id="card-schron">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="image/Schron_Mobile.png">
-                        <img src="image/Schron.png" alt="Schron" class="pic-project">
-                    </picture>
-                    <div class="card">
-                        <h2>Schron</h2><br>
-                        <p>O sistema permitirá na facilitação e agilização de grades horárias de escolas, de qualquer
-                            ensino. Possibilitando gestores das escolas concluírem de forma rápida e eficiente os
-                            horários.
+            <div class="card">
+                <div class="bolinhas">
+                    <div class="bolinha" id="red"></div>
+                    <div class="bolinha" id="yellow"></div>
+                    <div class="bolinha" id="green"></div>
+                </div>
+                <div class="image-project">
+                    <img src="image/card/Barba&Co_card.png" alt="">
+                </div>
+                <div class="info-project">
+                    <div class="text-project">
+                        <h3 class="title">Barber shop</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
-                        <div class="linksProjects">
-                            <a href="https://github.com/degu0/Schron" id="idLinkGutHub" target="_blank">
-                                <i class="fa-brands fa-github fa-xl"></i>
-                            </a>
+                        <div>
+                            <img src="image/languages/javascript-155-svgrepo-com.svg" alt="">
+                            <img src="image/languages/react-svgrepo-com.svg" alt="">
+                            <img src="image/languages/css3-02-svgrepo-com.svg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="cardProjects" data-anime="right" id="card-library">
-                    <picture class="pic-order">
-                        <source media="(max-width: 650px)" srcset="image/Library_Mobile.png">
-                        <img src="image/Library.png" alt="Library" class="pic-project">
-                    </picture>
-                    <div class="card" id="card-information-library">
-                        <h2>Library</h2><br>
-                        <p>Este é um website desenvolvido para facilitar a organização dos livros da biblioteca da
-                            Escola
-                            Técnica Estadual Ministro Fernando Lyra. Com um sistema de armazenamento de dados
-                            simplificado e
-                            fácil de usar, os usuário poderão facilmente gerenciar o acervo da biblioteca.</p>
-                        <div class="linksProjects">
-                            <a href="https://github.com/degu0/Library_ETE" id="idLinkGutHub" target="_blank">
-                                <i class="fa-brands fa-github fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardProjects" data-anime="left" id="card-barber">
-                    <picture>
-                        <source media="(max-width: 650px)" srcset="image/Barba&Co_Moblie.png">
-                        <img src="image/Barba&Co.png" alt="Barber-shop" class="pic-project" id="pic-barber">
-                    </picture>
-                    <div class="card">
-                        <h2>Barba & Co</h2><br>
-                        <p>Este projeto é um site para uma barbearia, com design responsivo e usabilidade intuitiva. O objetivo é proporcionar aos clientes uma interface moderna e amigável, onde eles possam conhecer os serviços oferecidos, agendar horários, obter informações sobre os barbeiros e entrar em contato.</p>
-                        <div class="linksProjects">
-                            <a href="https://github.com/degu0/Barber-shop" id="idLinkGutHub" target="_blank">
-                                <i class="fa-brands fa-github fa-xl"></i>
+                    <div class="end-card">
+                        <div class="div-buttons">
+                            <a href="https://github.com/degu0/Barber-shop" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/github.svg" alt="Logo_Github">
+                                    <p class="text">Git Hub</p>
+                                </button>
                             </a>
                             <a href="https://barber-shop-dun.vercel.app/" target="_blank">
-                                <i class="fa-solid fa-link"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardProjects" data-anime="right" id="card-cost">
-                    <picture class="pic-order">
-                        <source media="(max-width: 650px)" srcset="image/Cost_Mobile.png">
-                        <img src="image/Cost.png" alt="Cost" class="pic-project">
-                    </picture>
-                    <div class="card">
-                        <h2>Cost</h2><br>
-                        <p>Primeiro projeto feito com React. Um site por fins de ajudar no gerenciamentos dos seus
-                            projetos,
-                            parte financeira.</p>
-                        <div class="linksProjects">
-                            <a href="https://github.com/degu0/Cost" id="idLinkGutHub" target="_blank">
-                                <i class="fa-brands fa-github fa-xl"></i>
+                                <button class="button">
+                                    <img src="image/logo/link.svg" alt="Link">
+                                    <p class="text">Link</p>
+                                </button>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-    </section>
-    <hr>
-    <footer class="footerDivision">
-        <div id="copy">
-            <p>Me chamo Deyvid Gustavo Correia de Sousa</p>
-            <p>Email para contanto: <span>yatog2013@gmail.com</span></p>
+            <div class="card">
+                <div class="bolinhas">
+                    <div class="bolinha" id="red"></div>
+                    <div class="bolinha" id="yellow"></div>
+                    <div class="bolinha" id="green"></div>
+                </div>
+                <div class="image-project">
+                    <img src="image/card/Cost_card.png" alt="">
+                </div>
+                <div class="info-project">
+                    <div class="text-project">
+                        <h3 class="title">Cost</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div>
+                            <img src="image/languages/javascript-155-svgrepo-com.svg" alt="">
+                            <img src="image/languages/react-svgrepo-com.svg" alt="">
+                            <img src="image/languages/css3-02-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="end-card">
+                        <div class="div-buttons">
+                            <a href="https://github.com/degu0/Cost" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/github.svg" alt="Logo_Github">
+                                    <p class="text">Git Hub</p>
+                                </button>
+                            </a>
+                            <a href="https://github.com/degu0/Cost" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/link.svg" alt="Link">
+                                    <p class="text">Link</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bolinhas">
+                    <div class="bolinha" id="red"></div>
+                    <div class="bolinha" id="yellow"></div>
+                    <div class="bolinha" id="green"></div>
+                </div>
+                <div class="image-project">
+                    <img src="image/card/Github_Finder_card.png" alt="">
+                </div>
+                <div class="info-project">
+                    <div class="text-project">
+                        <h3 class="title">Github Finder</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div>
+                            <img src="image/languages/javascript-155-svgrepo-com.svg" alt="">
+                            <img src="image/languages/react-svgrepo-com.svg" alt="">
+                            <img src="image/languages/css3-02-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="end-card">
+                        <div class="div-buttons">
+                            <a href="https://github.com/degu0/Github-Finder" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/github.svg" alt="Logo_Github">
+                                    <p class="text">Git Hub</p>
+                                </button>
+                            </a>
+                            <a href="https://github-finder-degu.vercel.app/" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/link.svg" alt="Link">
+                                    <p class="text">Link</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bolinhas">
+                    <div class="bolinha" id="red"></div>
+                    <div class="bolinha" id="yellow"></div>
+                    <div class="bolinha" id="green"></div>
+                </div>
+                <div class="image-project">
+                    <img src="image/card/Library_card.png" alt="">
+                </div>
+                <div class="info-project">
+                    <div class="text-project">
+                        <h3 class="title">Library</h3>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div>
+                            <img src="image/languages/html-124-svgrepo-com.svg" alt="">
+                            <img src="image/languages/css3-02-svgrepo-com.svg" alt="">
+                            <img src="image/languages/javascript-155-svgrepo-com.svg" alt="">
+                            <img src="image/languages/php01-svgrepo-com.svg" alt="">
+                            <img src="image/languages/mysql-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="end-card">
+                        <div class="div-buttons">
+                            <a href="https://github.com/degu0/Library" target="_blank">
+                                <button class="button">
+                                    <img src="image/logo/github.svg" alt="Logo_Github">
+                                    <p class="text">Git Hub</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="network">
-            <p>Mais redes de contanto:</p>
-            <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-            </a>
-            <a href="https://github.com/degu0" target="_blank">
-                <i class="fa-brands fa-github fa-xl"></i>
-            </a>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="contact">
+            <h2>Contato</h2>
+            <div class="information-contact" data-anime="">
+                <div class="div-information-contact">
+                    <div class="circle-contact">
+                        <img src="image/logo/email-svgrepo-com.svg" alt="logo-email">
+                    </div>
+                    <div class="the-contact">
+                        <p>Email: yatog2013@gmail.com</p>
+                    </div>
+                </div>
+                <div class="div-information-contact">
+                    <div class="circle-contact">
+                        <img src="image/logo/linkedin.svg" alt="logo-linkedin">
+                    </div>
+                    <div class="the-contact">
+                        <p>Linkedin: Deyvid Gustavo </p>
+                    </div>
+                </div>
+                <div class="div-information-contact">
+                    <div class="circle-contact">
+                        <img src="image/logo/github.svg" alt="logo-github">
+                    </div>
+                    <div class="the-contact">
+                        <p>Github: degu0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+    <footer class="footer">
+        <div class="nav-footer">
+            <h4>Menu</h4>
+            <ul class="ul-footer">
+                <li><a href="#" class="link-nav">HOME</a></li>
+                <li><a href="#" class="link-nav">SOBRE</a></li>
+                <li><a href="#" class="link-nav">PROJETOS</a></li>
+                <li><a href="#" class="link-nav">CONTATO</a></li>
+            </ul>
+        </div>
+        <div class="nav-contact-footer">
+            <h4>Contato</h4>
+            <ul class="ul-footer" id="ul-contact-footer">
+                <li>
+                    <a href="https://github.com/degu0" target="_blank">
+                        <button class="button">
+                            <img src="image/logo/github.svg" alt="Logo_Github">
+                            <p class="text">Git Hub</p>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/deyvid-gustavo-0642a2235/" target="_blank">
+                        <button class="button">
+                            <img src="image/logo/linkedin.svg" alt="Logo_Linkedin">
+                            <p class="text">LinkedIn</p>
+                        </button>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
     <script src="script/script.js"></script>
